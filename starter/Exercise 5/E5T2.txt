@@ -1,0 +1,26 @@
+# Identify tools that will allow you to do the following:
+
+## Scan infrastructure as code templates
+Checkov - https://github.com/bridgecrewio/checkov
+Regula - https://github.com/fugue/regula
+
+### Example vulnerability
+- Server Side Encryption (SSE) not enabled
+- Ingress open to 0.0.0.0/0
+- IAM policies with full privilege
+
+##Scan AMI’s or containers for OS vulnerabilities
+Clair: https://github.com/quay/clair
+
+### Example vulnerability
+NIST: https://nvd.nist.gov/
+CVE-2021-xxxxx
+
+##Scan an AWS environment for cloud configuration vulnerabilities
+AWS Config: https://aws.amazon.com/config/
+
+### Example vulnerability
+Unsecured users:
+- Not enable MFA for users
+- No password policy
+S3 Bucket Permissions Misconfiguration

@@ -1,0 +1,9 @@
+Based on the architecture diagram, and the steps you have taken so far to upload data and access the application web service, identify at least 2 obvious poor practices as it relates to security.  Include justification.
+
+# Poor practice 1
+The IAM Role (InstanceRole) is granted unrestricted access to all S3 buckets associated with the instance, thus disregarding the principle of least privilege. 
+Roles should be narrowly defined to only include the necessary resources and actions they require.
+
+# Poor practice 2
+In the VPC configuration, all route definitions specify the DestinationCidrBlock as 0.0.0.0/0.
+If there's a breach within the resource in the subnet configured by this routing table, the attacker can choose to transfer information to any IP address.

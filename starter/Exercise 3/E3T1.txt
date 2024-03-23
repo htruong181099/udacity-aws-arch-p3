@@ -1,0 +1,8 @@
+# Describe GuardDuty findings that were detected related to the brute force attack
+In E3T1_guardduty.png, I already performed the attack simulation but after day of monitoring, AWS GuardDuty failed to identify the brute force attack.
+Therefore I can't describe this error. I saw in the knowledge thread, students also encountered same issue,
+Apologize for that.
+
+# Research the AWS Guard Duty documentation page and explain how GuardDuty may have detected this attack - i.e. what was its source of information.
+AWS Guard Duty uses a variety of sources of information to detect potential threats, including: AWS CloudTrail event logs, VPC Flow Logs, and DNS logs.
+AWS Guard Duty checks for the VPC flow logs, specific for port 22 in this case.
